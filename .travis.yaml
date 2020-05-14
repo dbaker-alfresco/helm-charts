@@ -40,6 +40,4 @@ deploy:
   keep_history: true
   local_dir: ./distribution
   on:
-    branches:
-      only:
-        - master
+    branch: master
