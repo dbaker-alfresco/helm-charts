@@ -1,5 +1,5 @@
 dist: trusty
-sudo: false
+# sudo: false
 
 # Install Helm and Kubeval
 before_install:
