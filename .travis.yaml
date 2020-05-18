@@ -15,12 +15,12 @@ before_install:
 
 env:
   # Which K8s version are we going to validate against
-  - KUBERNETES_VERSION="1.10.0"
+  - KUBERNETES_VERSION="1.10.9"
 
 # Run some tests
 script:
   # Lint Todo App chart syntax
-  - helm lint charts/Todo
+  - helm lint charts/todo
   # Validate generated K8s manifests
   - mkdir manifests
   - helm template charts/todo --output-dir manifests
